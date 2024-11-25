@@ -138,6 +138,44 @@ class RoomScreen extends StatelessWidget {
           ),
         ),
       ),
+       bottomSheet: Container(
+        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 12),
+        height: 90,
+        decoration: BoxDecoration(color: Colors.white),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            TextButton(
+              onPressed: () {},
+              child: Text('✌ Leave quitly',
+                  style: TextStyle(
+                      color: Colors.red, fontWeight: FontWeight.bold)),
+              style: TextButton.styleFrom(backgroundColor: Colors.grey[300]),
+            ),
+            Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.add,
+                  ),
+                  style:
+                      IconButton.styleFrom(backgroundColor: Colors.grey[300]),
+                ),
+                SizedBox(width: 10),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    CupertinoIcons.hand_raised,
+                  ),
+                  style:
+                      IconButton.styleFrom(backgroundColor: Colors.grey[300]),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
